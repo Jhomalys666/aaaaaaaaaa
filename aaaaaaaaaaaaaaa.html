@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIÑO NIÑO</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+    }
+
+    .card {
+        width: 300px;
+        padding: 20px;
+        background: linear-gradient(to right, #ff758c, #ff7eb3);
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .inside {
+        display: none;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .card.open .inside {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: center;
+        color: black;
+    }
+
+    .heart {
+        color: #ff4e50;
+    }
+
+    .flower {
+        text-align: center;
+        margin-top: 20px;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+
+    .flower img {
+        width: 120px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<div class="card" onclick="this.classList.toggle('open')">
+    <p>¡Te Amo Mucho!</p>
+    <p><i class="heart">❤️</i></p>
+    <div class="flower">
+        
+    </div>
+    <div class="inside">
+        <p>Hola niño lindo,</p>
+        <p>No olvides nunca que te amo demasiado,</p>
+        <p>Que eres muy importante para mí,</p>
+        <p>Que siempre estaré para ti,</p>
+        <p>Y que jamás te cambiaría por nadie.</p>
+        <p>Eres el niño con los ojitos más lindos que he visto,</p>
+        <p>Me encantas tal y como eres,</p>
+        <p>Amo cada parte de ti.</p>
+        <p>Eres el mejor novio del mundo.</p>
+        <p>Gracias por ser parte de mi vida.</p>
+    </div>
+</div>
+</body>
+</html>
